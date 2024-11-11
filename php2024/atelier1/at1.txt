@@ -1,0 +1,34 @@
+Exercice N°1 : 
+
+Non valide: A  $A B  $1A   $1_Var $prénom  $nom*matriclue 
+Valide:$ABC  $_VAR  $_1VAR
+
+
+Exercice N° 2 : 
+
+
+$2var = 13;    =>>   $var2 = 13;
+$var+ "<BR>".$2var;     =>>     echo $var . "+ <BR>" . $var2;
+print "Hello", $var;    =>>     print "Hello $var";
+
+
+Exercice N° 3 :
+Faux
+0
+1
+Inconnu
+Monsieur
+Cherif
+
+
+Exercice N° 4 : 
+
+
+
+
+
+
+
+
+
+

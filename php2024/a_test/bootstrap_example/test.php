@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bootsrtap test</title>
+  <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+<table>
+<?php
+echo"
+  <tr>
+    <th>nom</th>
+    <th>moyenne</th>
+  </tr>
+";
+$etudiant = ['mohamed' => 18.5 , 'eya' =>12.75 , 'abir' => 15 , 'mounir' =>11.2 , 'ahmed' => 9];
+foreach ($etudiant as $key => $value) {
+echo"
+  <tr>
+    <td>$key</td>
+    <td>$value</td>
+  </tr>
+" ;
+ };
+?>
+</table>
+
+
+
+
+<h3>etudiants ayant moyenne >10</h3>
+<table>
+<?php
+echo"
+  <tr>
+    <th>nom</th>
+    <th>moyenne</th>
+  </tr>
+";
+$etudiant = ['mohamed' => 18.5 , 'eya' =>12.75 , 'abir' => 15 , 'mounir' =>11.2 , 'ahmed' => 9];
+foreach ($etudiant as $key => $value) {
+        if($value>10){
+      echo"
+        <tr>
+          <td>$key</td>
+          <td>$value</td>
+        </tr>
+      " ;
+          }
+ };
+?>
+</table>
+
+
+
+<?php
+echo"<br><h5>----nombre d'etudiants---</h5>";
+
+$etudiant = ['mohamed' => 18.5 , 'eya' =>12.75 , 'abir' => 15 , 'mounir' =>11.2 , 'ahmed' => 9];
+$nbre=0;
+foreach ($etudiant as $key => $value) {
+   $nbre=$nbre + 1;
+ };
+ echo($nbre);
+?>
+
+
+<h3>etudiants ayant bonne note </h3>
+<table>
+<?php
+echo"
+  <tr>
+    <th>nom</th>
+    <th>moyenne</th>
+  </tr>
+";
+$etudiant = ['mohamed' => 18.5 , 'eya' =>12.75 , 'abir' => 15 , 'mounir' =>11.2 , 'ahmed' => 9];
+foreach ($etudiant as $key => $value) {
+        if($value>10){
+      echo"
+        <tr>
+          <td>$key</td>
+          <td>$value</td>
+        </tr>
+      " ;
+          }
+ };
+?>
+</table>
+
+
+
+
+</body>
+</html>
